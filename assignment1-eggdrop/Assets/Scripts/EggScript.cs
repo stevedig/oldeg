@@ -9,7 +9,8 @@ public class EggScript : MonoBehaviour
     }
 
     //Update is called by Unity every frame
-	void Update () {
+	void Update () 
+    {
         float fallSpeed = 2 * Time.deltaTime;
         transform.position -= new Vector3(0, fallSpeed, 0);
 

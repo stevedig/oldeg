@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerScript : MonoBehaviour 
 {
+	[HideInInspector]
     public int theScore = 0;
+	public Text scoreUI;
 
 	void Update () 
     {
@@ -22,8 +25,6 @@ public class PlayerScript : MonoBehaviour
     //OnGUI is called multiple times per frame. Use this for GUI stuff only!
     void OnGUI()
     {
-        //We display the game GUI from the playerscript
-        //It would be nicer to have a seperate script dedicated to the GUI though...
-        GUILayout.Label("Score: " + theScore);
+		scoreUI.text = " Score : " + theScore; //Improved with new Unity 4.6 UI System
     }    
 }
