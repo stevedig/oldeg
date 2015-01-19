@@ -46,10 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\eggdrop\Scripts\EggCollider.cs" />
-     <Compile Include="Assets\eggdrop\Scripts\EggScript.cs" />
-     <Compile Include="Assets\eggdrop\Scripts\PlayerScript.cs" />
-     <Compile Include="Assets\eggdrop\Scripts\SpawnerScript.cs" />
+     <Compile Include="Assets\Scripts\EggCollider.cs" />
+     <Compile Include="Assets\Scripts\EggScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+     <Compile Include="Assets\Scripts\SpawnerScript.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
