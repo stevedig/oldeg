@@ -3,21 +3,15 @@ using System.Collections;
 
 public class EggScript : MonoBehaviour 
 {
-    void Awake()
-    {
-        //rigidbody.AddForce(new Vector3(0, -100, 0), ForceMode.Force);
-    }
-
-    //Update is called by Unity every frame
 	void Update () 
     {
+		//Handles Egg Falling Speed
         float fallSpeed = 2 * Time.deltaTime;
         transform.position -= new Vector3(0, fallSpeed, 0);
 
-        if (transform.position.y < -1 || transform.position.y >= 20)
+        if (transform.position.y < -2 || transform.position.y >= 20)
         {
-            //Destroy this gameobject (and all attached components)
-            Destroy(gameObject);
+            Destroy(gameObject); //Destroys EggPrefab
         }
 	}
 }

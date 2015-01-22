@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{924E9D61-C526-E427-9E49-CD63FA469CDD}</ProjectGuid>
+	<ProjectGuid>{7DB6C5B5-9023-4890-D289-9DDAF2DBEC5A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,7 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\EggCollider.cs" />
+     <Compile Include="Assets\Scripts\EggCollecter.cs" />
+     <Compile Include="Assets\Scripts\EggCracker.cs" />
      <Compile Include="Assets\Scripts\EggScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScript.cs" />
      <Compile Include="Assets\Scripts\SpawnerScript.cs" />

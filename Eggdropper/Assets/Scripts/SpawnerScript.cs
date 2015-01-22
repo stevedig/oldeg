@@ -4,9 +4,8 @@ using System.Collections;
 public class SpawnerScript : MonoBehaviour 
 {
     public Transform Egg;
-
     private float nextEggTime = 0.0f;
-    private float spawnRate = 1.5f;
+    public float spawnRate = 1.5f;
  	
 	void Update () 
     {
@@ -15,7 +14,7 @@ public class SpawnerScript : MonoBehaviour
             SpawnEgg();
             nextEggTime = Time.time + spawnRate;
 
-            //Speed up the spawnrate for the next egg
+            //Increase Spawn Rate Over Time, Clamp At 0.3f
             spawnRate *= 0.98f;
             spawnRate = Mathf.Clamp(spawnRate, 0.3f, 99f);
         }
