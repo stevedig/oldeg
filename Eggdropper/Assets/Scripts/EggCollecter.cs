@@ -4,7 +4,8 @@ using System.Collections;
 public class EggCollecter : MonoBehaviour 
 {
     PlayerScript myPlayerScript;
-	public AudioClip eggCollect;
+
+	//public AudioClip eggCollect; //Variable For Audio
 	
     void Awake()
     {
@@ -17,6 +18,7 @@ public class EggCollecter : MonoBehaviour
         Destroy(Egg);
 
         myPlayerScript.theScore++; //Increase Score
-		audio.PlayOneShot (eggCollect); //Egg Collect Sound
+
+		//audio.PlayOneShot (eggCollect); //Egg Collect Sound
     }
 }
